@@ -2,10 +2,34 @@
 <html>
     <head>
         <link rel="stylesheet" href = "style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="cassideeIdleTransparent.png">
     </head>
     <body>
         <img src = "1752501454787-729316799-dimension-1.png">
-        <h1> I am a rock</h1>
+        <h1> Lol i know like nothing about CSS</h1>
         <p> without rock, there is no rock</p>
+        <h5> wow tiny buttons! uhhhhhh</h5>
+       <!--
+        <a href="https://aconlin.com" target="_blank"><img src="https://preview.valen.zip/88x31/acon.gif" alt="acon's button"></a>
+        <a href="https://www.valen.zip"><img src="https://www.valen.zip/button-win98.gif" alt="valen's site's windows 98 themed 88x31 button" /></a>
+    --> 
+        <button id="generateButton">Generate Random Number</button>
+        <div class="random-number" id="randomNumber"> wow number</div>
+
+        <script>document.getElementById('generateButton').addEventListener('click', function() {
+  const min = 1;
+  const max = 100;
+  
+  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const numberDisplay = document.getElementById('randomNumber');
+  numberDisplay.innerText = randomNumber;
+
+  numberDisplay.style.transform = 'scale(1.2)';
+  setTimeout(() => {
+    numberDisplay.style.transform = 'scale(1)';
+  }, 300);
+});
+        </script>
     </body>
 </html>
